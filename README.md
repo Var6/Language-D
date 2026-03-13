@@ -81,7 +81,7 @@ main()
 From this folder:
 
 ```powershell
-cd "c:\Users\Ashish\Desktop\Language prop\langugae D"
+cd <path-to-language-d-project>
 ```
 
 Type check:
