@@ -1,0 +1,34 @@
+{
+  "name": "atom-language-d",
+  "version": "0.1.0",
+  "description": "Language D support for Atom or Pulsar",
+  "main": "./lib/language-d",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "activationCommands": {
+    "atom-text-editor[data-grammar='source language-d']": [
+      "language-d:check",
+      "language-d:run",
+      "language-d:compile-cpp",
+      "language-d:build-native"
+    ]
+  },
+  "keywords": [
+    "language-d",
+    "compiler",
+    "atom",
+    "pulsar"
+  ],
+  "repository": "",
+  "grammars": [
+    {
+      "scopeName": "source.language-d",
+      "path": "grammars/language-d.cson",
+      "fileTypes": [
+        "d"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+'scopeName': 'source.language-d'
+'name': 'Language D'
+'fileTypes': [
+  'd'
+]
+'patterns': [
+  {
+    'include': '#comments'
+  }
+  {
+    'include': '#strings'
+  }
+  {
+    'include': '#numbers'
+  }
+  {
+    'include': '#keywords'
+  }
+  {
+    'include': '#types'
+  }
+  {
+    'include': '#functions'
+  }
+]
+'repository': {
+  'comments': {
+    'patterns': [
+      {
+        'match': '#.*$'
+        'name': 'comment.line.number-sign.language-d'
+      }
+    ]
+  }
+  'strings': {
+    'patterns': [
+      {
+        'begin': '"'
+        'end': '"'
+        'name': 'string.quoted.double.language-d'
+      }
+      {
+        'begin': "'"
+        'end': "'"
+        'name': 'string.quoted.single.language-d'
+      }
+    ]
+  }
+  'numbers': {
+    'patterns': [
+      {
+        'match': '\\b\\d+(?:\\.\\d+)?\\b'
+        'name': 'constant.numeric.language-d'
+      }
+    ]
+  }
+  'keywords': {
+    'patterns': [
+      {
+        'match': '\\b(use|fn|let|class|struct|ptr|setptr|return|if|elif|else|for|in|while)\\b'
+        'name': 'keyword.control.language-d'
+      }
+      {
+        'match': '\\b(True|False|self)\\b'
+        'name': 'constant.language.language-d'
+      }
+    ]
+  }
+  'types': {
+    'patterns': [
+      {
+        'match': '\\b(Int|Float|Bool|String|Void|Vector)\\b'
+        'name': 'storage.type.language-d'
+      }
+    ]
+  }
+  'functions': {
+    'patterns': [
+      {
+        'match': '\\b(fn)\\s+([A-Za-z_]\\w*)'
+        'captures': {
+          '1': {
+            'name': 'keyword.control.language-d'
+          }
+          '2': {
+            'name': 'entity.name.function.language-d'
+          }
+        }
+      }
+      {
+        'match': '\\b(class|struct)\\s+([A-Za-z_]\\w*)'
+        'captures': {
+          '1': {
+            'name': 'keyword.control.language-d'
+          }
+          '2': {
+            'name': 'entity.name.type.class.language-d'
+          }
+        }
+      }
+    ]
+  }
+}

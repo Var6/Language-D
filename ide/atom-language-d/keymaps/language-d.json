@@ -1,0 +1,7 @@
+{
+  "atom-text-editor[data-grammar='source language-d']": {
+    "f5": "language-d:run",
+    "ctrl-alt-c": "language-d:check",
+    "ctrl-alt-b": "language-d:build-native"
+  }
+}

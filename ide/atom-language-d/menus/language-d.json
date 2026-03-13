@@ -1,0 +1,28 @@
+[
+  {
+    "label": "Packages",
+    "submenu": [
+      {
+        "label": "Language D",
+        "submenu": [
+          {
+            "label": "Check",
+            "command": "language-d:check"
+          },
+          {
+            "label": "Run",
+            "command": "language-d:run"
+          },
+          {
+            "label": "Compile C++",
+            "command": "language-d:compile-cpp"
+          },
+          {
+            "label": "Build Native",
+            "command": "language-d:build-native"
+          }
+        ]
+      }
+    ]
+  }
+]
